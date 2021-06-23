@@ -131,3 +131,121 @@ border-width: 30px;
     visibility: hidden;
 
 }
+.one,.two,.three,.four{
+    background-color: crimson;
+    color:rgb(14, 13, 13);
+    font-size: 40px;
+    padding: 20px;
+   min-height: 60px;
+   max-height: 150px;
+    line-height: 1.5;
+  
+    margin: 20px;
+    width: fit-content;
+    display:block;
+    overflow: hidden
+   
+}
+.omar{
+    background-color: #f9f9f9;
+    font-size:120px;
+    color:rebeccapurple;
+    text-shadow: 7px  0px 0px red,10px 0px 0px green,15px 0px 0px blue;
+
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.five{
+    width:400px;
+    background-color: rgb(35, 231, 9);
+    color:black;
+    font-size: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    letter-spacing:2px ;
+}
+.five:hover{
+    overflow:visible;
+}
+.asd{
+    color:black;
+    font-size: 40px;
+    display: block; 
+    max-width: 600px;
+    background-color:rgb(0%, 100%, 100%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.zero{
+    text-align: center center;
+    font-size: 40px;
+    direction: ltr;
+    text-transform:uppercase;
+   padding:100px ;
+   display:inline-block;
+   background-color: darkgreen;
+   width:200px;
+   height: 100px;
+   margin-left: 50%;
+   color:white;
+   border-bottom: 20px solid rgb(7, 48, 7);
+}
+.bb{
+    display: block;
+}
+.pare{
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    font-size: 30px;
+    border: 5px solid blue;
+}
+.pare p{
+    border:5px solid;
+    border-color: inherit;
+    padding: inherit;
+    background-color: darkorchid;
+}
+.sans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 100px;
+    font-style: italic;
+    text-transform:lowercase;
+}
+.cairo{
+    font-family: 'Cairo', sans-serif;
+    font-weight:900;
+    font-size: 100px;
+    text-transform:uppercase;
+}
+.jom{
+    font-family: 'Jomhuria',cursive;
+    font-size: bold;
+    font-variant:small-caps;
+    font-size: 150px;
+}
+body{
+    font-size: 20px;
+}
+.sans1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-transform:lowercase;
+}
+.cairo1{
+    font-family: 'Cairo', sans-serif;
+    font-weight:900;
+    font-size: 2rem;
+    text-transform:uppercase;
+}
+.jom1{
+    font-family: 'Jomhuria',cursive;
+    font-size: bold;
+       font-size: 7vw;
+}
