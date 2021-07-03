@@ -1,0 +1,53 @@
+p{
+    position: relative;
+    width: 700px;
+    height: 50px;
+    font-size: 30px;
+    left:30%;
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+background-color: gold;
+margin-bottom: 20px; 
+  }
+  p::after{
+      content:"";
+      position: absolute;
+      background-color: green;
+      right:-12px;
+      top:0px;
+      width: 10px;
+      height: 111px;
+  }
+ p::before{
+    content:counter(members-counter);
+    position: absolute;
+    background-color: rgb(73, 2, 87);
+    color:white;
+    left:-131px;
+    top:0px;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+   
+   
+  }
+  .container{
+     margin-top: 0px;
+counter-increment: members-counter;
+   
+  }
+  /* .zero1{
+    position: relative;
+    width: 700px;
+    height: 50px;
+    font-size: 30px;
+    left:50%;
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+background-color: gold;
+margin-bottom: 20px; 
+ } */
