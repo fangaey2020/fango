@@ -1,53 +1,281 @@
-p{
-    position: relative;
-    width: 700px;
-    height: 50px;
-    font-size: 30px;
-    left:30%;
-    text-align: center;
-    padding: 30px;
-    font-size: 35px;
-background-color: gold;
-margin-bottom: 20px; 
-  }
-  p::after{
-      content:"";
-      position: absolute;
-      background-color: green;
-      right:-12px;
-      top:0px;
-      width: 10px;
-      height: 111px;
-  }
- p::before{
-    content:counter(members-counter);
-    position: absolute;
-    background-color: rgb(73, 2, 87);
-    color:white;
-    left:-131px;
-    top:0px;
-    width: 90px;
-    height: 90px;
-    padding: 10px;
-    text-align: center;
-    font-size: 30px;
-   
-   
-  }
-  .container{
-     margin-top: 0px;
-counter-increment: members-counter;
-   
-  }
-  /* .zero1{
-    position: relative;
-    width: 700px;
-    height: 50px;
-    font-size: 30px;
-    left:50%;
-    text-align: center;
-    padding: 30px;
-    font-size: 35px;
-background-color: gold;
-margin-bottom: 20px; 
- } */
+p {
+  position: relative;
+  width: 700px;
+  height: 50px;
+  font-size: 30px;
+  left: 30%;
+  text-align: center;
+  padding: 30px;
+  font-size: 35px;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+p::after {
+  content: "";
+  position: absolute;
+  background-color: green;
+  right: -12px;
+  top: 0px;
+  width: 10px;
+  height: 111px;
+}
+p::before {
+  content: counter(members-counter);
+  position: absolute;
+  background-color: rgb(73, 2, 87);
+  color: white;
+  left: -131px;
+  top: 0px;
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.container {
+  margin-top: 0px;
+  counter-increment: members-counter;
+}
+
+.element1,
+.element2,
+.element3 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid black;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  box-shadow: -7px -16px 1px 0px red, 1px 11px 7px 1px blue;
+}
+.container1 {
+  margin: 20px auto;
+  counter-increment: members-counter1;
+  display: inline-block;
+  width: 1000px;
+  position: relative;
+}
+.container1::after {
+  content: counter(members-counter1);
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 315px;
+  top: -11px;
+  text-align: center;
+  font-size: 30px;
+  display: inline;
+}
+.ele1 {
+  background-color: rgb(211, 206, 206);
+  width: 300px;
+  float: left;
+  padding: 20px;
+  margin: 20px;
+}
+.parent {
+  width: 762px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgb(87, 86, 86);
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: cyan;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 70px;
+  font-weight: bold;
+  padding: 50px;
+  border: 5px solid black;
+}
+.ele1 h2 {
+  width: 264px;
+  height: 40px;
+  text-align: center;
+  background-color: cyan;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 22px;
+  font-size: 40px;
+  text-shadow: 2px 2px blue;
+  border: 5px solid black;
+}
+/* *{
+  box-sizing: border-box;
+} */
+
+.one1 {
+  background-color: rgb(245, 210, 11);
+  width: 58%;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  position: absolute;
+  left: 22%;
+  transition: margin-top 1s 0.5s linear;
+}
+.parent2 {
+  background-color: darkgray;
+  padding: 50px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  width: 800px;
+  height: 300px;
+  transition-duration: 3s;
+  transition-delay: 1s;
+  transition-property: margin-top, margin-left, height;
+  transition-timing-function: linear;
+}
+.parent2:hover {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 1000px;
+  height: 400px;
+}
+.one1:hover {
+  margin-top: 100px;
+}
+.impo {
+  width: 400px;
+  text-align: center;
+  font-size: 30px;
+  border: 10px solid blue !important;
+}
+.parent3 {
+  overflow: hidden;
+  margin: 50px auto;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  background-color: gold;
+}
+.parent3 div {
+  float: left;
+  width: 80%;
+  height: 16%;
+  background-color: white;
+  border: 4px solid var(--mainColor, black);
+  margin: 26px;
+  text-align: center;
+  padding: var(--mainPadding);
+  font-size: 36px;
+  color: var(--mainColor, red);
+}
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+.zero1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  background-color: white;
+  font-size: 80px;
+  display: flex;
+  text-align: center;
+  padding: 88px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -22px -3px 14px -3px #03a9f4, 25px -8px 18px 1px#ff9800;
+}
+.parent5 {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  background-color: #eee;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+}
+.parent5 div {
+  background-color: red;
+  color: white;
+  /* width:170px; */
+  width: calc(90% / 4);
+  /* height:calc(80%/2); */
+  text-align: center;
+  padding: 20px;
+}
+
+.center {
+  background-color: tomato;
+  color: black;
+  width: 300px;
+  height: 200px;
+  font-size: 30px;
+  line-height: 200px;
+  text-align: center;
+}
+.parent6 {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  background-color: #eee;
+  padding: 20px;
+  margin: 20px auto;
+  position: absolute;
+  left: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: stretch;
+}
+.parent6 div {
+  background-color: red;
+  color: white;
+  /* width:170px; */
+  width: calc(100% / 4);
+  /* height:calc(80%/2); */
+  text-align: center;
+  padding: 20px;
+}
+.parent7 {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  background-color: #eee;
+  padding: 20px;
+  margin-top: 350px;
+  margin-left: 50%;
+  left: 50%;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parent7 div {
+  background-color: red;
+  color: white;
+  /* width:170px; */
+  width: 150px;
+  /* height:calc(80%/2); */
+  text-align: center;
+  padding: 20px;
+}
+.page {
+  display: flex;
+  width: 600px;
+  height: 300px;
+}
