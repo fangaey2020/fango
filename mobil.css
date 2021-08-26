@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.parent div {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/*mobile */
+@media (max-width: 767px) {
+}
+/* small screens */
+@media (min-width: 768px) {
+  .parent div {
+    width: calc(50%-10px);
+  }
+}
+/* meduim screens */
+  @media (min-width: 992px) {
+    .parent div {
+      width: calc(25%-5px);
+    }
+  }
+  /* large content:  */
+
+@media (min-width: 1200px) {
+    
+  }
+  * {
+    box-sizing: border-box;  
+   }
+   
+   div {
+    width: 600px;
+    background-color: #ddd;
+    padding: 30px;
+    margin: 5% auto;
+    font-size: 25px;
+    position: relative;
+   }
+   .arrow.top::before{
+    content: "";
+    border: 20px solid #ddd;
+    position: absolute;
+    left: 48%;
+    top: -16px;
+    transform: rotate(45deg); 
+   }
+   .arrow.right::after { 
+    content: "";
+    position: absolute;
+    border: 20px solid #ddd;
+    transform: rotate(45deg);
+    right: -16px;
+    top: 25px;
+   }
+   .arrow.bottom::before {
+    content: "";
+    position: absolute;
+    border: 20px solid #ddd;
+    transform: rotate(45deg);
+    left: 48%;
+    bottom: -16px;
+   }
+   .arrow.left::after {
+    content: "";
+    position: absolute;
+    border: 20px solid #ddd;
+    transform: rotate(45deg);
+    left: -16px;
+    top: 25px;
+   }
